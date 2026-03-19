@@ -31,7 +31,7 @@ graph LR
 
 ```bash
 # 1. Clone The Orchestrator
-git clone https://github.com/your-org/the-orchestrator.git
+git clone https://github.com/growthmind-inc/the-orchestrator.git
 
 # 2. Copy into your project
 cp -r the-orchestrator/.claude/ /path/to/your-project/.claude/

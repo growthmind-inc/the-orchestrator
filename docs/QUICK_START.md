@@ -14,7 +14,7 @@ Copy the `.claude/` directory from this repo into your project root:
 
 ```bash
 # Clone The Orchestrator
-git clone https://github.com/your-org/the-orchestrator.git
+git clone https://github.com/growthmind-inc/the-orchestrator.git
 
 # Copy skills, rules, and guides into your project
 cp -r the-orchestrator/.claude/ /path/to/your-project/.claude/
