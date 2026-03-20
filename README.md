@@ -1,8 +1,8 @@
 # The Orchestrator
 
-An autonomous PM-to-PL orchestration framework for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Plans sprints from outcomes, executes them with quality gates, and ships code — using the AI-Human Engineering Stack.
+An autonomous orchestration framework for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Plans sprints from outcomes, executes them with quality gates, and ships code — using the AI-Human Engineering Stack.
 
-The Orchestrator turns a set of project outcomes into shipped code through an autonomous agent cycle: PM agent plans sprints, CTO agent makes architecture decisions, PL agent executes with wave-based parallelism, and dual reliability + security audits verify everything before a PR is created. Cross-run learning means every sprint builds on what the system learned from previous ones.
+The Orchestrator turns a set of project outcomes into shipped code through an autonomous agent cycle: a Product Manager agent plans sprints, a CTO agent makes architecture decisions, a Project Lead agent executes with wave-based parallelism, and dual reliability + security audits verify everything before a PR is created. Cross-run learning means every sprint builds on what the system learned from previous ones.
 
 ## Architecture
 
@@ -59,7 +59,7 @@ See `docs/QUICK_START.md` for a detailed setup guide.
 
 | Skill | Description | When to Use |
 |-------|-------------|-------------|
-| `/orchestrate` | Autonomous PM-to-PL cycle | Full sprint automation |
+| `/orchestrate` | Autonomous Product Manager to Project Lead cycle | Full sprint automation |
 | `/outcomes` | Define project outcomes | Project setup |
 | `/prd` | Generate Product Requirements Document | Complex features needing full spec |
 | `/architect` | Design architecture from PRD | Architecture decisions |
@@ -97,11 +97,11 @@ _The AI-Human Engineering Stack framework was created by Henrique Sanchez and Ha
 
 ### The Cycle
 
-1. **PM Agent** reads outcomes + values + past retros, plans a sprint, writes a PRD
+1. **Product Manager Agent** reads outcomes + values + past retros, plans a sprint, writes a PRD
 2. **CTO Agent** reads the PRD + codebase patterns, makes architecture decisions, writes an ADD
 3. **UX Agent** (optional) designs the user experience for UI-heavy sprints
 4. **Pre-Audit** identifies likely failures and test specs before coding begins
-5. **PL Agent** generates tasks, executes them in parallel waves, validates, commits
+5. **Project Lead Agent** generates tasks, executes them in parallel waves, validates, commits
 6. **Post-Audit** verifies reliability and security of the implementation
 7. **Pattern Extraction** captures learnings for future sprints
 8. **PR** — changes land on a feature branch for human review
@@ -164,7 +164,7 @@ Agent roles (like `execution-agent`, `research-agent`, `reliability-auditor`) ar
 
 - **The AI-Human Engineering Stack** framework by Henrique Sanchez and Hayen Mill
 - **The Orchestrator** — built in production, open-sourced for the community
-- Read the full deep-dive: [We Open-Sourced Our AI Agent Orchestrator](https://devdecks.io/blog/open-source-orchestrator-ai-agents) (blog post)
+- Read the full deep-dive: [We Open-Sourced Our AI Agent Orchestrator](https://devdecks.ai/blog/open-source-orchestrator-ai-agents) (blog post)
 
 ## License
 
